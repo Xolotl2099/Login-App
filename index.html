@@ -76,13 +76,17 @@
         <h1>¡Bienvenido!</h1>
         <p>Para continuar, inicia sesión con tu cuenta de Google.</p>
         
-        <button id="loginButton">Iniciar sesión con Google</button>
-    </div>
+        <button id="loginButton">
+  <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo" style="height:20px; margin-right:8px;">
+  Iniciar sesión con Google
+</button>
 
-    <script>
+
+        <script>
         document.getElementById('loginButton').onclick = function() {
-            // Reemplaza esta URL con la URL de tu webhook de n8n
-            var n8nWebhookUrl = 'https://tudominio.n8n.cloud/webhook-test/123456789';
+            // **IMPORTANTE**: Reemplaza 'TU_WEBHOOK_N8N_URL_AQUI' con la URL completa de tu webhook de n8n.
+            // Esta URL es la que inicia el proceso de autenticación con Google.
+            const n8nWebhookUrl = 'https://xolotl2099.app.n8n.cloud/webhook/f5b0365d-ee2e-4901-8b8b-7f9ab737c06f';
             window.location.href = n8nWebhookUrl;
         };
     </script>
